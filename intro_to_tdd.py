@@ -62,6 +62,20 @@ class coinsTests(unittest.TestCase):
     def testFive(self):
         self.assertEqual(coins(7), [0, 0, 1, 2])
 
+def factorial(num):
+    if num > 1:
+        return num * (num - 1)
+
+    
+
+class factorialTests(unittest.TestCase):
+    def testOne(self):
+        self.assertEqual(factorial(5), 120)
+    def testTwo(self):
+        self.assertEqual(factorial(12), )
+    def testThree(self):
+        self.assertEqual(factorial(5), 120)
+
 
 if __name__ == '__main__':
     unittest.main()
